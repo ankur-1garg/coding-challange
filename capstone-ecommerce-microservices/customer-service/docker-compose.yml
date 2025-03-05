@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  customer-service:
+    build: .
+    container_name: customer-service
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DJANGO_SETTINGS_MODULE=customer_prj.settings
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,[::1]
+    volumes:
+      - ./customer_prj:/app
+    networks:
+      - customer-network
+
+networks:
+  customer-network:
+    driver: bridge

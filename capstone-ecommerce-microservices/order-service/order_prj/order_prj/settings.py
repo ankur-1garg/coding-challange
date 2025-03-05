@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework.authtoken',
+    'corsheaders',
     'order_app',
 ]
 
@@ -84,15 +84,15 @@ WSGI_APPLICATION = 'order_prj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django_snowflake',
-        'NAME': os.getenv('SNOWFLAKE_NAME'),
-        'SCHEMA': os.getenv('SNOWFLAKE_SCHEMA'),
-        'WAREHOUSE': os.getenv('SNOWFLAKE_WAREHOUSE'),
-        'USER': os.getenv('SNOWFLAKE_USER'),
-        'PASSWORD': os.getenv('SNOWFLAKE_PASSWORD'),
-        'ACCOUNT': os.getenv('SNOWFLAKE_ACCOUNT'),
+        'NAME': os.getenv('SNOWFLAKE_NAME', 'TRIAL_DB'),
+        'SCHEMA': os.getenv('SNOWFLAKE_SCHEMA', 'TRIAL_SCMA'),
+        'WAREHOUSE': os.getenv('SNOWFLAKE_WAREHOUSE', 'COMPUTE_WH'),
+        'USER': os.getenv('SNOWFLAKE_USER', 'ANKUR'),
+        'PASSWORD': os.getenv('SNOWFLAKE_PASSWORD', 'bTJawBrXFJb4VyE'),
+        'ACCOUNT': os.getenv('SNOWFLAKE_ACCOUNT', 'ut20337.ap-southeast-1'),
         'OPTIONS': {
-            'database': os.getenv('SNOWFLAKE_NAME'),
-            'schema': os.getenv('SNOWFLAKE_SCHEMA'),
+            'database': os.getenv('SNOWFLAKE_NAME', 'TRIAL_DB'),
+            'schema': os.getenv('SNOWFLAKE_SCHEMA', 'TRIAL_SCMA'),
             'role': 'ACCOUNTADMIN'
         },
     }
@@ -142,13 +142,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ]
 }
+
+CORS_ALLOW_ALL_ORIGINS = True  # Only for development
 
 # Service Integration Settings
 MICROSERVICE_SETTINGS = {

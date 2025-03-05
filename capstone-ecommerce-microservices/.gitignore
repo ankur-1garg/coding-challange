@@ -7,6 +7,3 @@ env/
 */env/
 .env.*
 
-git rm -r --cached .
-git add .
-git commit -m "Add gitignore for virtual environments"

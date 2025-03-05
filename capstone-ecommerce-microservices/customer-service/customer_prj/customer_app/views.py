@@ -1,0 +1,106 @@
+from rest_framework import viewsets, status
+from rest_framework.response import Response
+from rest_framework.decorators import action
+from django.core.exceptions import ValidationError
+from django.db import DatabaseError, transaction
+from .models import Customer
+from .serializers import CustomerSerializer
+from .permissions import IsSuperUserOrReadOnly
+from logging import getLogger
+
+logger = getLogger(__name__)
+
+
+class CustomerViewSet(viewsets.ModelViewSet):
+    """ViewSet for managing customers with role-based permissions"""
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer
+    permission_classes = [IsSuperUserOrReadOnly]
+
+    def perform_create(self, serializer):
+        """Log creation with user info"""
+        instance = serializer.save()
+        logger.info(
+            f"Customer created by {self.request.user}: {instance.email}")
+
+    def perform_update(self, serializer):
+        """Log updates with user info"""
+        instance = serializer.save()
+        logger.info(
+            f"Customer updated by {self.request.user}: {instance.email}")
+
+    def create(self, request, *args, **kwargs):
+        try:
+            with transaction.atomic():
+                serializer = self.get_serializer(data=request.data)
+                serializer.is_valid(raise_exception=True)
+                self.perform_create(serializer)
+                logger.info(
+                    f"Customer created by {request.user.username}: {serializer.data['email']}")
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+        except ValidationError as e:
+            logger.error(
+                f"Validation error by {request.user.username}: {str(e)}")
+            return Response(
+                {'error': 'Invalid customer data', 'details': str(e)},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        except DatabaseError as e:
+            logger.error(
+                f"Database error by {request.user.username}: {str(e)}")
+            return Response(
+                {'error': 'Database error occurred'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+    def update(self, request, *args, **kwargs):
+        try:
+            instance = self.get_object()
+            serializer = self.get_serializer(
+                instance, data=request.data, partial=True)
+            serializer.is_valid(raise_exception=True)
+            self.perform_update(serializer)
+            logger.info(f"Customer updated successfully: {instance.id}")
+            return Response(serializer.data)
+        except Customer.DoesNotExist:
+            logger.warning(f"Customer not found: {kwargs.get('pk')}")
+            return Response(
+                {'error': 'Customer not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        except ValidationError as e:
+            logger.error(f"Validation error: {str(e)}")
+            return Response(
+                {'error': 'Invalid customer data', 'details': str(e)},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+    @action(detail=True, methods=['POST'])
+    def change_status(self, request, pk=None):
+        """Change customer status (superuser only)"""
+        if not request.user.is_superuser:
+            return Response(
+                {'error': 'Only superusers can change status'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        try:
+            customer = self.get_object()
+            new_status = request.data.get('status')
+
+            if new_status not in dict(Customer.STATUS_CHOICES):
+                return Response(
+                    {'error': 'Invalid status value'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            customer.change_status(new_status)
+            logger.info(
+                f"Status changed by {request.user}: {customer.email} -> {new_status}")
+
+            return Response({'status': new_status})
+        except Customer.DoesNotExist:
+            return Response(
+                {'error': 'Customer not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )

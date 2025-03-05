@@ -1,0 +1,6 @@
+Django
+djangorestframework
+snowflake-connector-python
+django-snowflake  
+python-dotenv
+django-cors-headers

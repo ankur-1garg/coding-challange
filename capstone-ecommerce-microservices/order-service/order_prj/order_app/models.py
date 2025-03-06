@@ -48,11 +48,13 @@ class Order(models.Model):
 
     created_by = models.CharField(
         max_length=150,
+        default='system',  # Add default value
         help_text='Username of the user who created the order'
     )
 
     updated_by = models.CharField(
         max_length=150,
+        default='system',  # Add default value
         help_text='Username of the user who last updated the order'
     )
 

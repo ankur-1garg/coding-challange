@@ -1,12 +1,18 @@
+from rest_framework.permissions import AllowAny
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from rest_framework.decorators import action
+from rest_framework.decorators import action, api_view, permission_classes, authentication_classes
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.core.exceptions import ValidationError
 from django.db import DatabaseError, transaction
 from .models import Customer
 from .serializers import CustomerSerializer
 from .permissions import IsSuperUserOrReadOnly
 from logging import getLogger
+from rest_framework.authtoken.models import Token
+from django.contrib.auth import authenticate
 
 logger = getLogger(__name__)
 
@@ -104,3 +110,68 @@ class CustomerViewSet(viewsets.ModelViewSet):
                 {'error': 'Customer not found'},
                 status=status.HTTP_404_NOT_FOUND
             )
+
+
+@api_view(['GET'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def validate_token(request):
+    """Endpoint to validate token and return user info"""
+    return Response({
+        'user': {
+            'id': request.user.id,
+            'email': request.user.email,
+            'is_superuser': request.user.is_superuser
+        }
+    }, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def get_auth_token(request):
+    """Generate or retrieve authentication token"""
+    username = request.data.get('username')
+    password = request.data.get('password')
+
+    if not username or not password:
+        return Response({
+            'error': 'Both username and password are required'
+        }, status=status.HTTP_400_BAD_REQUEST)
+
+    user = authenticate(username=username, password=password)
+
+    if user:
+        token, _ = Token.objects.get_or_create(user=user)
+        return Response({
+            'token': token.key,
+            'user_id': user.pk,
+            'email': user.email,
+            'is_superuser': user.is_superuser
+        })
+
+    return Response({
+        'error': 'Invalid credentials'
+    }, status=status.HTTP_401_UNAUTHORIZED)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def validate_token(request):
+    """Endpoint to validate token"""
+    return Response({
+        'valid': True,
+        'user_id': request.user.id,
+        'username': request.user.username,
+        'is_superuser': request.user.is_superuser
+    })
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def health_check(request):
+    """Health check endpoint that doesn't require authentication"""
+    return Response({
+        'status': 'healthy',
+        'service': 'customer-service',
+        'version': '1.0'
+    })

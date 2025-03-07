@@ -3,20 +3,18 @@ version: "3.8"
 services:
   product-service:
     build: .
-    container_name: product-service
+    container_name: ecommerce-product-service
     ports:
       - "8002:8002"
-    env_file:
-      - .env
+    env_file: .env
     environment:
       - PYTHONUNBUFFERED=1
       - DJANGO_SETTINGS_MODULE=product_prj.settings
-      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,[::1]
-    volumes:
-      - ./product_prj:/app
+      - DJANGO_ALLOWED_HOSTS=*
     networks:
-      - product-network
+      - ecommerce-network
 
 networks:
-  product-network:
-    driver: bridge
+  ecommerce-network:
+    name: ecommerce_network
+    external: true

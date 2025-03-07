@@ -3,7 +3,7 @@ version: "3.8"
 services:
   customer-service:
     build: .
-    container_name: customer-service
+    container_name: ecommerce-customer-service
     ports:
       - "8001:8001"
     env_file:
@@ -16,6 +16,7 @@ services:
       - ./customer_prj:/app
     networks:
       - customer-network
+    restart: unless-stopped
 
 networks:
   customer-network:

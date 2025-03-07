@@ -23,7 +23,8 @@ class Order(models.Model):
     STATUS_CHOICES = [
         ('pending', 'Pending'),
         ('processing', 'Processing'),
-        ('delivered', 'Delivered'),
+        ('completed', 'Completed'),
+        ('cancelled', 'Cancelled'),
     ]
 
     id = models.CharField(
@@ -84,6 +85,15 @@ class Order(models.Model):
     def save(self, *args, **kwargs):
         """Override save to handle customer statistics updates"""
         is_new = not self.id
+        # Calculate total price before saving
+        if not self.id:  # Only for new orders
+            super().save(*args, **kwargs)  # Save first to create relations
+            total = Decimal('0.00')
+            for item in self.items.all():
+                if item.unit_price and item.quantity:
+                    total += Decimal(str(item.unit_price)) * \
+                        Decimal(str(item.quantity))
+            self.total_price = total
         with transaction.atomic():
             # Generate ID for new orders
             if not self.id:

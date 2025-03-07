@@ -1,8 +1,12 @@
 # Python
-__pycache__/
+__pycache__
 *.py[cod]
 *$py.class
 *.so
+*.pyc
+*.pyo
+*.pyd
+.Python
 
 # Virtual Environment
 venv/
@@ -29,3 +33,17 @@ db.sqlite3-journal
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Additional
+.idea/
+*.swp
+*.swo
+*~
+logs/
+media/
+static/
+node_modules/
+coverage/
+.tox/
+.DS_Store
+Thumbs.db

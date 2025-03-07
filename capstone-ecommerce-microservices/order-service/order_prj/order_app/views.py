@@ -2,6 +2,7 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication, SessionAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.authtoken.models import Token
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import transaction
@@ -48,18 +49,12 @@ class OrderViewSet(viewsets.ModelViewSet):
 
     def get_serializer_context(self):
         context = super().get_serializer_context()
-        context['token'] = self.request.auth.key if self.request.auth else None
+        if self.request.user.is_authenticated:
+            token, _ = Token.objects.get_or_create(user=self.request.user)
+            context['token'] = token.key
         return context
 
-    def create(self, request, *args, **kwargs):
-        try:
-            serializer = self.get_serializer(data=request.data)
-            serializer.is_valid(raise_exception=True)
-            self.perform_create(serializer)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        except Exception as e:
-            logger.error(f"Order creation failed: {str(e)}")
-            return Response(
-                {'error': str(e)},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+    def perform_create(self, serializer):
+        if not self.request.user.is_authenticated:
+            raise ValidationError("Authentication required")
+        serializer.save()

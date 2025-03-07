@@ -203,3 +203,9 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_COOKIE_AGE = 3600  # 1 hour
+
+# Admin security settings
+ADMIN_URL = 'secure-admin/'
+LOGIN_URL = 'admin:login'
+ADMIN_SITE_HEADER = "Order Service Admin"
+ADMIN_SITE_TITLE = "Order Service Administration"

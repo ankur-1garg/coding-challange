@@ -87,17 +87,8 @@ class Customer(models.Model):
     )
 
     class Meta:
-        db_table = 'customers'
-        managed = True
-        indexes = [
-            models.Index(fields=['email'], name='customer_email_idx'),
-            models.Index(fields=['name'], name='customer_name_idx'),
-            models.Index(fields=['status'], name='customer_status_idx'),
-            models.Index(fields=['created_at'], name='customer_created_idx')
-        ]
-        ordering = ['-created_at']
-        verbose_name = 'Customer'
-        verbose_name_plural = 'Customers'
+        db_table = 'CUSTOMERS'
+        managed = False  # Let Snowflake manage the table
 
     def __str__(self):
         return f"{self.name} ({self.email})"

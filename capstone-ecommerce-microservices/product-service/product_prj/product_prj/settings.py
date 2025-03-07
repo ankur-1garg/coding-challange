@@ -41,22 +41,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'corsheaders',
     'product_app',
+    'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'product_app.middleware.TokenValidationMiddleware',
 ]
 
 ROOT_URLCONF = 'product_prj.urls'
@@ -148,12 +147,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ],
-    'EXCEPTION_HANDLER': 'product_app.utils.custom_exception_handler'
+    ]
 }
 
 CORS_ALLOW_ALL_ORIGINS = True  # Only for development
@@ -163,3 +162,15 @@ CUSTOMER_SERVICE_URL = 'http://localhost:8001'
 ORDER_SERVICE_URL = 'http://localhost:8003'
 SERVICE_HEALTH_CHECK_ENABLED = True
 SERVICE_HEALTH_CHECK_TIMEOUT = 5  # seconds
+
+# Admin security settings
+ADMIN_URL = 'secure-admin/'
+LOGIN_URL = 'admin:login'
+ADMIN_SITE_HEADER = "Product Service Admin"
+ADMIN_SITE_TITLE = "Product Service Administration"
+
+# Session security settings
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 3600  # 1 hour

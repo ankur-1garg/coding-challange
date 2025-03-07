@@ -8,16 +8,26 @@ class OrderNotFoundError(OrderError):
     pass
 
 
-class InsufficientStockError(OrderError):
-    """Raised when there is not enough stock for an order"""
+class InsufficientStockError(Exception):
+    """Exception raised when there is insufficient stock for an order"""
     pass
 
 
-class ProductNotFoundError(OrderError):
-    """Raised when a product does not exist"""
+class ProductNotFoundError(Exception):
+    """Exception raised when a product cannot be found"""
     pass
 
 
 class DatabaseError(OrderError):
     """Raised when there is a database connection or query error"""
+    pass
+
+
+class ProductServiceError(Exception):
+    """Exception raised when there is an error communicating with the product service"""
+    pass
+
+
+class OrderValidationError(Exception):
+    """Exception raised when order validation fails"""
     pass

@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  order-service:
+    build: .
+    container_name: ecommerce-order-service
+    ports:
+      - "8003:8003"
+    env_file: ../.env  # Ensure this file is in the same directory as docker-compose.yml
+    volumes:
+      - ./order_prj:/app  # Syncs local changes into container
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DJANGO_SETTINGS_MODULE=order_prj.settings
+      - DJANGO_ALLOWED_HOSTS=*
+    networks:
+      - ecommerce-network
+
+networks:
+  ecommerce-network:
+    name: ecommerce_network
+    external: true

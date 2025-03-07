@@ -1,0 +1,36 @@
+Not Found: /
+"GET / HTTP/1.1" 404 179
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 179
+Not Found: /
+"GET / HTTP/1.1" 404 179
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 179
+Unauthorized: /api/orders/
+"GET /api/orders/ HTTP/1.1" 401 5200
+Not Found: /static/rest_framework/css/bootstrap.min.css
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/prettify.css
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/csrf.js
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/load-ajax-form.js
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+Unauthorized: /api/orders/
+"GET /api/orders/ HTTP/1.1" 401 5200
+Unauthorized: /api/orders/
+"GET /api/orders/ HTTP/1.1" 401 5233

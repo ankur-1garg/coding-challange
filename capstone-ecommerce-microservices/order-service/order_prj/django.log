@@ -34,3 +34,7 @@ Unauthorized: /api/orders/
 "GET /api/orders/ HTTP/1.1" 401 5200
 Unauthorized: /api/orders/
 "GET /api/orders/ HTTP/1.1" 401 5233
+Unauthorized: /api/
+"GET /api/ HTTP/1.1" 401 5043
+Unauthorized: /api/orders/
+"GET /api/orders/ HTTP/1.1" 401 5200

@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-ahk7xwo21&13u$_nugr4!&2mx804u617bpp$)$u3b=#yi6bm5h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Add these service URLs after the ALLOWED_HOSTS setting
 CUSTOMER_SERVICE_URL = 'http://localhost:8001'

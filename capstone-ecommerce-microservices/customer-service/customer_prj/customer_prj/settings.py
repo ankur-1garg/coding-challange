@@ -141,14 +141,14 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Admin security settings
-ADMIN_URL = 'secure-admin/'  # Change default admin URL
+ADMIN_URL = 'customer-admin/'  # Change default admin URL
 LOGIN_URL = 'admin:login'
 ADMIN_SITE_HEADER = "Customer Service Admin"
 ADMIN_SITE_TITLE = "Customer Service Administration"
 
 # Session security settings
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_COOKIE_AGE = 3600  # 1 hour
 
@@ -162,3 +162,67 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ]
 }
+
+# ...existing code...
+
+# Service URLs and Settings
+PRODUCT_SERVICE_URL = 'http://localhost:8002'
+ORDER_SERVICE_URL = 'http://localhost:8003'
+SERVICE_HEALTH_CHECK_ENABLED = True
+SERVICE_HEALTH_CHECK_TIMEOUT = 5  # seconds
+
+# Admin security settings
+ADMIN_URL = 'customer-admin/'
+LOGIN_URL = 'admin:login'
+ADMIN_SITE_HEADER = "Customer Service Admin"
+ADMIN_SITE_TITLE = "Customer Service Administration"
+
+# Session security settings
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 3600  # 1 hour
+
+# CSRF and CORS Settings
+CSRF_TRUSTED_ORIGINS = [
+    'http://ecommerce.local',
+    'https://ecommerce.local',
+    'http://localhost',
+    'http://127.0.0.1'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://ecommerce.local',
+    'https://ecommerce.local',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000'
+]
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
+# Security Settings
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
+CSRF_USE_SESSIONS = True
+CSRF_COOKIE_SAMESITE = 'Lax'
+CORS_ALLOW_ALL_ORIGINS = False

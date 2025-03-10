@@ -1,0 +1,129 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ecommerce-ingress
+  annotations:
+    # CORS settings
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, OPTIONS, DELETE"
+    nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
+    nginx.ingress.kubernetes.io/cors-allow-headers: "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,X-CSRFToken"
+
+    # Security headers
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: "10m"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "30"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "30"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "30"
+
+    # Proxy settings
+    nginx.ingress.kubernetes.io/proxy-buffering: "on"
+    nginx.ingress.kubernetes.io/proxy-set-header-host: "$host"
+    nginx.ingress.kubernetes.io/proxy-set-header-x-real-ip: "$remote_addr"
+    nginx.ingress.kubernetes.io/proxy-set-header-x-forwarded-for: "$proxy_add_x_forwarded_for"
+    nginx.ingress.kubernetes.io/proxy-set-header-x-forwarded-proto: "$scheme"
+
+    # Security headers
+    nginx.ingress.kubernetes.io/x-frame-options: "DENY"
+    nginx.ingress.kubernetes.io/x-content-type-options: "nosniff"
+    nginx.ingress.kubernetes.io/x-xss-protection: "1; mode=block"
+
+    # Logging
+    nginx.ingress.kubernetes.io/enable-access-log: "true"
+    nginx.ingress.kubernetes.io/enable-rewrite-log: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: ecommerce.local
+      http:
+        paths:
+          # Customer Service paths
+          - path: /customers/
+            pathType: Prefix
+            backend:
+              service:
+                name: customerservice
+                port:
+                  number: 8001
+          - path: /validate-token/
+            pathType: Prefix
+            backend:
+              service:
+                name: customerservice
+                port:
+                  number: 8001
+          - path: /customer-auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: customerservice
+                port:
+                  number: 8001
+          - path: /customer-token-auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: customerservice
+                port:
+                  number: 8001
+
+          # Product Service paths
+          - path: /product/
+            pathType: Prefix
+            backend:
+              service:
+                name: productservice
+                port:
+                  number: 8002
+          - path: /product-admin/
+            pathType: Prefix
+            backend:
+              service:
+                name: productservice
+                port:
+                  number: 8002
+          - path: /product-auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: productservice
+                port:
+                  number: 8002
+          - path: /product-token-auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: productservice
+                port:
+                  number: 8002
+
+          # Order Service paths
+          - path: /order/
+            pathType: Prefix
+            backend:
+              service:
+                name: orderservice
+                port:
+                  number: 8003
+          - path: /order-admin/
+            pathType: Prefix
+            backend:
+              service:
+                name: orderservice
+                port:
+                  number: 8003
+          - path: /order-auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: orderservice
+                port:
+                  number: 8003
+          - path: /order-token-auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: orderservice
+                port:
+                  number: 8003

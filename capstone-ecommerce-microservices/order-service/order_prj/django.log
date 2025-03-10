@@ -38,3 +38,35 @@ Unauthorized: /api/
 "GET /api/ HTTP/1.1" 401 5043
 Unauthorized: /api/orders/
 "GET /api/orders/ HTTP/1.1" 401 5200
+Not Found: /
+"GET / HTTP/1.1" 404 179
+Not Found: /api/admin
+"GET /api/admin HTTP/1.1" 404 179
+Not Found: /api/admin
+"GET /api/admin HTTP/1.1" 404 179
+Unauthorized: /api/
+"GET /api/ HTTP/1.1" 401 5043
+Not Found: /static/rest_framework/css/bootstrap.min.css
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/css/default.css
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
+"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/ajax-form.js
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/js/load-ajax-form.js
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+Not Found: /admin
+"GET /admin HTTP/1.1" 404 179

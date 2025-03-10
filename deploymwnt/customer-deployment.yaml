@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customerservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: customerservice
+  template:
+    metadata:
+      labels:
+        app: customerservice
+    spec:  # This 'spec' was missing in the error!
+      containers:
+        - name: customerservice
+          image: ag1121/customer-service:latest
+          ports:
+            - containerPort: 8001
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+          env:
+            - name: DEBUG
+              value: "true"
+            - name: DB_HOST
+              value: "ut20337.ap-southeast-1"
+            - name: DB_NAME
+              value: "TRIAL_DB"
+            - name: DB_SCHEMA
+              value: "TRIAL_SCMA"
+            - name: DB_WAREHOUSE
+              value: "COMPUTE_WH"
+            - name: DB_USER
+              value: "ANKUR"
+            - name: DB_PASSWORD
+              value: "bTJawBrXFJb4VyE"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: customerservice
+spec:
+  selector:
+    app: customerservice
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
+  type: ClusterIP  # ✅ No external exposure needed

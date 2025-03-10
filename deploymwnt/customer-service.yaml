@@ -1,0 +1,16 @@
+# Update all service files (customer-service.yaml, product-service.yaml, order-service.yaml)
+apiVersion: v1
+kind: Service
+metadata:
+  name: customer-service
+  labels:
+    app: customer-service
+spec:
+  selector:
+    app: customer-service # Must match deployment pod labels
+  ports:
+    - name: http
+      port: 8001
+      targetPort: 8001
+      protocol: TCP
+  type: ClusterIP

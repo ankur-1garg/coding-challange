@@ -22,6 +22,6 @@ admin.site.site_header = "Customer Service Admin"
 admin.site.site_title = "Customer Service Administration"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('customer_app.urls')),
+    path('customer-admin/', admin.site.urls),
+    path('customer/', include('customer_app.urls')),
 ]

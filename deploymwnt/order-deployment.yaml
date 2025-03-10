@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderservice
+  labels:
+    app: orderservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderservice
+  template:
+    metadata:
+      labels:
+        app: orderservice
+    spec:
+      containers:
+        - name: orderservice
+          image: ag1121/order-service:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8003
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
+            - name: DJANGO_SETTINGS_MODULE
+              value: "order_prj.settings"
+            - name: DJANGO_ALLOWED_HOSTS
+              value: "*"
+            - name: DEBUG
+              value: "true"
+            - name: DB_HOST
+              value: "ut20337.ap-southeast-1"
+            - name: DB_NAME
+              value: "TRIAL_DB"
+            - name: DB_SCHEMA
+              value: "TRIAL_SCMA"
+            - name: DB_WAREHOUSE
+              value: "COMPUTE_WH"
+            - name: DB_USER
+              value: "ANKUR"
+            - name: DB_PASSWORD
+              value: "bTJawBrXFJb4VyE"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orderservice
+spec:
+  selector:
+    app: orderservice
+  ports:
+    - protocol: TCP
+      port: 8003
+      targetPort: 8003
+  type: ClusterIP

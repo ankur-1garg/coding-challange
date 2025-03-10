@@ -10,6 +10,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('validate-token/', validate_token, name='validate-token'),
     path('health/', health_check, name='health-check'),
-    path('api-auth/', include('rest_framework.urls')),  # Add this line
-    path('api-token-auth/', views.obtain_auth_token),  # Add this line
+    path('customer-auth/', include('rest_framework.urls')),  # Add this line
+    path('customer-token-auth/', views.obtain_auth_token),  # Add this line
 ]

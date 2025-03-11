@@ -21,7 +21,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
         try:
             # Fetch product details
             response = requests.get(
-                f"{settings.PRODUCT_SERVICE_URL}/api/products/{attrs['product_id']}/",
+                f"{settings.PRODUCT_SERVICE_URL}/product/products/{attrs['product_id']}/",
                 headers=headers,
                 timeout=5
             )
@@ -88,7 +88,7 @@ class OrderSerializer(serializers.ModelSerializer):
                     new_stock = item_data['current_stock'] - \
                         item_data['quantity']
                     response = requests.patch(
-                        f"{settings.PRODUCT_SERVICE_URL}/api/products/{item_data['product_id']}/",
+                        f"{settings.PRODUCT_SERVICE_URL}/product/products/{item_data['product_id']}/",
                         headers=headers,
                         json={'stock': new_stock},
                         timeout=5

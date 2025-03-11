@@ -116,7 +116,7 @@ class Order(models.Model):
         try:
             # Get current customer stats
             customer_response = requests.get(
-                f"{settings.CUSTOMER_SERVICE_URL}/api/customers/{self.customer_id}/",
+                f"{settings.CUSTOMER_SERVICE_URL}/customer/customers/{self.customer_id}/",
                 headers=headers,
                 timeout=5
             )
@@ -130,7 +130,7 @@ class Order(models.Model):
 
             # Update customer statistics
             update_response = requests.patch(
-                f"{settings.CUSTOMER_SERVICE_URL}/api/customers/{self.customer_id}/",
+                f"{settings.CUSTOMER_SERVICE_URL}/customer/customers/{self.customer_id}/",
                 headers=headers,
                 json=update_data,
                 timeout=5
@@ -179,7 +179,7 @@ class OrderItem(models.Model):
         # Get current product stock
         try:
             product_response = requests.get(
-                f"{settings.PRODUCT_SERVICE_URL}/api/products/{self.product_id}/",
+                f"{settings.PRODUCT_SERVICE_URL}/customer/products/{self.product_id}/",
                 headers=headers,
                 timeout=5
             )
@@ -195,7 +195,7 @@ class OrderItem(models.Model):
 
             # Update product stock
             update_response = requests.patch(
-                f"{settings.PRODUCT_SERVICE_URL}/api/products/{self.product_id}/",
+                f"{settings.PRODUCT_SERVICE_URL}/customer/products/{self.product_id}/",
                 headers=headers,
                 json={'stock': new_stock},
                 timeout=5

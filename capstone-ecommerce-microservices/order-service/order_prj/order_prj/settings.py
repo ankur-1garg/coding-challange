@@ -36,7 +36,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ahk7xwo21&13u$_nugr4!&2mx804u617bpp$)$u3b=#yi6bm5h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -156,7 +156,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Add CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ['*']
 
 # Django REST framework settings
 REST_FRAMEWORK = {

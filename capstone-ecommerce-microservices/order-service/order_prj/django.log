@@ -1,242 +1,549 @@
+Unauthorized: /order/orders/
+Session data corrupted
 Not Found: /
 "GET / HTTP/1.1" 404 179
-Not Found: /favicon.ico
-"GET /favicon.ico HTTP/1.1" 404 179
-Not Found: /
-"GET / HTTP/1.1" 404 179
-Not Found: /favicon.ico
-"GET /favicon.ico HTTP/1.1" 404 179
-Unauthorized: /api/orders/
-"GET /api/orders/ HTTP/1.1" 401 5200
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-Not Found: /static/rest_framework/css/default.css
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/bootstrap.min.js
-Not Found: /static/rest_framework/js/ajax-form.js
-Not Found: /static/rest_framework/js/prettify-min.js
-Not Found: /static/rest_framework/js/default.js
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Unauthorized: /api/orders/
-"GET /api/orders/ HTTP/1.1" 401 5200
-Unauthorized: /api/orders/
-"GET /api/orders/ HTTP/1.1" 401 5233
-Unauthorized: /api/
-"GET /api/ HTTP/1.1" 401 5043
-Unauthorized: /api/orders/
-"GET /api/orders/ HTTP/1.1" 401 5200
-Not Found: /
-"GET / HTTP/1.1" 404 179
-Not Found: /api/admin
-"GET /api/admin HTTP/1.1" 404 179
-Not Found: /api/admin
-"GET /api/admin HTTP/1.1" 404 179
-Unauthorized: /api/
-"GET /api/ HTTP/1.1" 401 5043
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-Not Found: /static/rest_framework/js/csrf.js
-Not Found: /static/rest_framework/js/bootstrap.min.js
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/ajax-form.js
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-Not Found: /static/rest_framework/js/default.js
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Not Found: /admin
-"GET /admin HTTP/1.1" 404 179
-Not Found: /
-"GET / HTTP/1.1" 404 179
-Not Found: /favicon.ico
-"GET /favicon.ico HTTP/1.1" 404 179
+Session data corrupted
 Unauthorized: /order/
 "GET /order/ HTTP/1.1" 401 5057
-Not Found: /static/rest_framework/css/default.css
-Not Found: /static/rest_framework/js/ajax-form.js
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/default.js
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/ajax-form.js
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/default.js
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/ajax-form.js
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-Not Found: /static/rest_framework/js/default.js
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/ajax-form.js
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/default.js
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/ajax-form.js
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/default.js
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/ajax-form.js
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/default.js
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Method Not Allowed: /order/orders/7f367e16-17fc-4f50-a42a-308070feaf03/
-"POST /order/orders/7f367e16-17fc-4f50-a42a-308070feaf03/ HTTP/1.1" 405 41
-Not Found: /static/rest_framework/css/bootstrap.min.css
-"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/prettify.css
-"GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
-Not Found: /static/rest_framework/js/ajax-form.js
-Not Found: /static/rest_framework/css/bootstrap-tweaks.css
-"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
-"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
-"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/css/default.css
-"GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/csrf.js
-"GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/default.js
-"GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/load-ajax-form.js
-"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/prettify-min.js
-"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
-Not Found: /static/rest_framework/js/bootstrap.min.js
-"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 10631
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 10631
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/product/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Not Found: /order/orders/8663e7e5-c83b-402e-bcdb-cb544ff3fbd8/
+"DELETE /order/orders/8663e7e5-c83b-402e-bcdb-cb544ff3fbd8/ HTTP/1.1" 404 46
+Method Not Allowed: /order/orders/
+"DELETE /order/orders/ HTTP/1.1" 405 43
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 170
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 145
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 137201
+Unauthorized: /order/orders/
+"GET /order/orders/ HTTP/1.1" 401 5216
+Bad Request: /order/orders/
+"POST /order/orders/ HTTP/1.1" 400 10442
+Session data corrupted
+Unauthorized: /order/orders/
+"POST /order/orders/ HTTP/1.1" 401 5217
+Internal Server Error: /order/orders/
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 123, in update_customer_statistics
+    customer_response.raise_for_status()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\views.py", line 60, in perform_create
+    serializer.save()
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\serializers.py", line 108, in create
+    order.update_customer_statistics(token)
+  File "C:\Users\ankur\coding challange\capstone-ecommerce-microservices\order-service\order_prj\order_app\models.py", line 144, in update_customer_statistics
+    raise ProductServiceError(
+order_app.exceptions.ProductServiceError: Error updating customer statistics: 404 Client Error: Not Found for url: http://localhost:8001/api/customers/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"POST /order/orders/ HTTP/1.1" 500 139381
+Session data corrupted
+Unauthorized: /order/orders/
+"POST /order/orders/ HTTP/1.1" 401 5217

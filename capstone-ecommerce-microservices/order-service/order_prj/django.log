@@ -547,3 +547,15 @@ order_app.exceptions.ProductServiceError: Error updating customer statistics: 40
 Session data corrupted
 Unauthorized: /order/orders/
 "POST /order/orders/ HTTP/1.1" 401 5217
+Not Found: /
+"GET / HTTP/1.1" 404 2629
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2680
+Unauthorized: /order/orders/
+"GET /order/orders/ HTTP/1.1" 401 5216
+Not Found: /order/orders/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/
+"GET /order/orders/b2e231ee-42c3-43df-bfb8-82af3a7e77c7/ HTTP/1.1" 404 11936
+Bad Request: /order/orders/cbe2bad4-b1f6-46b6-94ff-09be6be2d0c3/
+"PUT /order/orders/cbe2bad4-b1f6-46b6-94ff-09be6be2d0c3/ HTTP/1.1" 400 12506
+Bad Request: /order/orders/cbe2bad4-b1f6-46b6-94ff-09be6be2d0c3/
+"PUT /order/orders/cbe2bad4-b1f6-46b6-94ff-09be6be2d0c3/ HTTP/1.1" 400 12506
